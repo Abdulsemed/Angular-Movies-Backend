@@ -11,3 +11,4 @@ C:\Users\Bebe_x\source\repos\angular-movies\Domain\obj\Debug\net8.0\Domain.pdb
 C:\Users\Bebe_x\source\repos\angular-movies\Domain\obj\Debug\net8.0\ref\Domain.dll
 C:\Users\Bebe_x\source\repos\angular-movies\Domain\obj\Debug\net8.0\Domain.csproj.AssemblyReference.cache
 C:\Users\Bebe_x\source\repos\angular-movies\Domain\obj\Debug\net8.0\EFCoreSqlServerNetTopologySuite.cs
+C:\Users\Bebe_x\source\repos\angular-movies\Domain\obj\Debug\net8.0\Domain.sourcelink.json

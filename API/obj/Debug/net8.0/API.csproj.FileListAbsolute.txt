@@ -191,3 +191,4 @@ C:\Users\Bebe_x\source\repos\angular-movies\API\bin\Debug\net8.0\EntityFramework
 C:\Users\Bebe_x\source\repos\angular-movies\API\bin\Debug\net8.0\EntityFramework.dll
 C:\Users\Bebe_x\source\repos\angular-movies\API\bin\Debug\net8.0\Microsoft.AspNet.Identity.Core.dll
 C:\Users\Bebe_x\source\repos\angular-movies\API\bin\Debug\net8.0\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Bebe_x\source\repos\angular-movies\API\obj\Debug\net8.0\API.sourcelink.json

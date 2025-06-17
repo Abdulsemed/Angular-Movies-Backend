@@ -112,7 +112,7 @@ namespace API.Controllers
         public async Task<ActionResult<List<PaginatedResponse>>> FilterMovies([FromQuery] FilterPaginationDto filterPagination)
         {
             var moviesQueryable = _context.Movies.AsQueryable();
-            if (filterPagination.Title != null && !filterPagination.Title.IsNullOrEmpty())
+            if (filterPagination.Title != null && !(filterPagination.Title == null))
             {
                 moviesQueryable = moviesQueryable.Where(movie => movie.Title.Contains(filterPagination.Title));
             }

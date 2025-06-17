@@ -13,3 +13,4 @@ C:\Users\Bebe_x\source\repos\angular-movies\Application\obj\Debug\net8.0\Applica
 C:\Users\Bebe_x\source\repos\angular-movies\Application\obj\Debug\net8.0\refint\Application.dll
 C:\Users\Bebe_x\source\repos\angular-movies\Application\obj\Debug\net8.0\Application.pdb
 C:\Users\Bebe_x\source\repos\angular-movies\Application\obj\Debug\net8.0\ref\Application.dll
+C:\Users\Bebe_x\source\repos\angular-movies\Application\obj\Debug\net8.0\Application.sourcelink.json
