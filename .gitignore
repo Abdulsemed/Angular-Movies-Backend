@@ -1,8 +1,9 @@
 .env
 .vs
-api/obj
-api/bin
-application/obj
-application/bin
-domain/obj
-api/migrations
+API/obj
+API/bin
+API/migrations
+Application/obj
+Application/bin
+Domain/obj
+Domain/bin
