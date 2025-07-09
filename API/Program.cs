@@ -24,7 +24,7 @@ DotNetEnv.Env.Load("../.env");
 
 builder.Services.AddDbContext<AppDbContext>(options =>
 {
-    options.UseSqlServer(connectionString: Environment.GetEnvironmentVariable("CONNECTION_STRING"), sqlOptions=> sqlOptions.UseNetTopologySuite());
+    options.UseNpgsql(connectionString: Environment.GetEnvironmentVariable("CONNECTION_STRING"), o => o.UseNetTopologySuite());
 });
 
 builder.Services.AddSingleton<ICloudinaryService, CloudinaryService>();
@@ -75,6 +75,8 @@ builder.Services.AddAuthorization(options =>
 {
     options.AddPolicy("isAdmin", policy => policy.RequireClaim("role", "admin"));
 });
+
+AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
 
 
 builder.Services.AddIdentity<IdentityUser, IdentityRole>()

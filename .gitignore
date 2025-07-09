@@ -1,2 +1,8 @@
 .env
 .vs
+api/obj
+api/bin
+application/obj
+application/bin
+domain/obj
+api/migrations
