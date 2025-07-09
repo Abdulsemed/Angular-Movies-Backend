@@ -108,13 +108,13 @@ namespace API.Controllers
 
         [HttpPost]
         [Route("Create")]
-        public async Task<ActionResult<AuthenticationResponse>> CreateUser([FromBody] UserCredentials userCredentials)
+        public async Task<ActionResult<AuthenticationResponse>> CreateUser([FromBody] CreateUserDto createUserDto)
         {
-            var user = new IdentityUser { UserName = userCredentials.Email, Email = userCredentials.Email };
-            var result = await _userManager.CreateAsync(user, userCredentials.Password);
+            var user = new IdentityUser { UserName = createUserDto.UserName, Email = createUserDto.Email };
+            var result = await _userManager.CreateAsync(user, createUserDto.Password);
             if (result.Succeeded)
             {
-                var authenticationResponse = await CreateToken(userCredentials);
+                var authenticationResponse = await CreateToken(new UserCredentials() { Email = createUserDto.UserName, Password = createUserDto.Password});
                 return StatusCode(201, authenticationResponse);
             }
             else
@@ -125,12 +125,12 @@ namespace API.Controllers
 
         [HttpPost]
         [Route("Login")]
-        public async Task<ActionResult<AuthenticationResponse>> Login([FromBody] UserCredentials userCredentials)
+        public async Task<ActionResult<AuthenticationResponse>> Login([FromBody] LoginDto loginDto)
         {
-            var result = await _signInManager.PasswordSignInAsync(userName:userCredentials.Email, userCredentials.Password, isPersistent:false, lockoutOnFailure:false);
+            var result = await _signInManager.PasswordSignInAsync(userName:loginDto.UserName, loginDto.Password, isPersistent:false, lockoutOnFailure:false);
             if (result.Succeeded)
             {
-                var authenticationResponse = await CreateToken(userCredentials);
+                var authenticationResponse = await CreateToken(new UserCredentials() { Email = loginDto.UserName, Password = loginDto.Password});
                 return StatusCode(200, authenticationResponse);
             }
             else
@@ -144,10 +144,10 @@ namespace API.Controllers
         {
             var claims = new List<Claim>()
             {
-                new("email", userCredentials.Email),
+                new("username", userCredentials.Email),
             };
 
-            var user = await _userManager.FindByEmailAsync(userCredentials.Email);
+            var user = await _userManager.FindByNameAsync(userCredentials.Email);
             var dbClaims = await _userManager.GetClaimsAsync(user);
             claims.AddRange(dbClaims);
 

@@ -192,3 +192,9 @@ C:\Users\Bebe_x\source\repos\angular-movies\API\bin\Debug\net8.0\EntityFramework
 C:\Users\Bebe_x\source\repos\angular-movies\API\bin\Debug\net8.0\Microsoft.AspNet.Identity.Core.dll
 C:\Users\Bebe_x\source\repos\angular-movies\API\bin\Debug\net8.0\Microsoft.AspNet.Identity.EntityFramework.dll
 C:\Users\Bebe_x\source\repos\angular-movies\API\obj\Debug\net8.0\API.sourcelink.json
+C:\Users\Bebe_x\source\repos\angular-movies\API\bin\Debug\net8.0\Npgsql.dll
+C:\Users\Bebe_x\source\repos\angular-movies\API\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\Bebe_x\source\repos\angular-movies\API\bin\Debug\net8.0\NetTopologySuite.IO.PostGis.dll
+C:\Users\Bebe_x\source\repos\angular-movies\API\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.NetTopologySuite.dll
+C:\Users\Bebe_x\source\repos\angular-movies\API\bin\Debug\net8.0\Npgsql.NetTopologySuite.dll
+C:\Users\Bebe_x\source\repos\angular-movies\API\obj\Debug\net8.0\EFCoreNpgsqlNetTopologySuite.cs

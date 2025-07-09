@@ -194,8 +194,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "userCredentials",
-        "Type": "Application.DTOs.Auth.UserCredentials",
+        "Name": "createUserDto",
+        "Type": "Application.DTOs.Auth.CreateUserDto",
         "IsRequired": true
       }
     ],
@@ -251,8 +251,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "userCredentials",
-        "Type": "Application.DTOs.Auth.UserCredentials",
+        "Name": "loginDto",
+        "Type": "Application.DTOs.Auth.LoginDto",
         "IsRequired": true
       }
     ],
