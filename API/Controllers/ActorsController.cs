@@ -66,6 +66,7 @@ namespace API.Controllers
         }
 
         [HttpPost]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Policy ="isAdmin")]
         public async Task<ActionResult<ActorDto>> CreateActor([FromForm] CreateActorDto createActorDto)
         {
 
